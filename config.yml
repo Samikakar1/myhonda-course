@@ -1,0 +1,16 @@
+title: myhonda
+description: 'sample app for Honda Accord '
+template:
+  repo: myhonda-template
+  name: myhonda
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
